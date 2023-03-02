@@ -11,7 +11,8 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           {/* Page par default */}
-          <Route index element={<Home />} />1{/* Routage Pages */}
+          <Route index element={<Home />} />
+          {/* Routage Pages */}
           <Route path="/Home" element={<Home />} />
           <Route path="/Sign-in" element={<SignIn />} />
           <Route path="/User" element={<User />} />

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function SignInForm() {
   return (
@@ -15,7 +16,9 @@ export default function SignInForm() {
         <input type="checkbox" id="remember-me" />
         <label for="remember-me">Remember me</label>
       </div>
-      <button className="sign-in-button">Sign In</button>
+      <NavLink to="/User" className="main-nav-item">
+        <button className="sign-in-button">Sign In</button>
+      </NavLink>
     </form>
   );
 }
