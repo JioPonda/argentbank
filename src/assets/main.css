@@ -10,11 +10,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .main {
   flex: 1;
+  height: 79vh;
 }
 
 .bg-dark {
@@ -166,16 +166,43 @@ body {
 }
 
 .sign-in-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
   box-sizing: border-box;
   background-color: white;
   width: 300px;
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 3rem 0 0 42.5vw;
   padding: 2rem;
 }
 
+@media (max-width: 1440px) {
+  .sign-in-content {
+    margin: 3rem 0 0 40.5vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .sign-in-content {
+    margin: 3rem 0 0 39vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sign-in-content {
+    margin: 3rem 0 0 36vw;
+  }
+}
+
+@media (max-width: 920px) {
+  .sign-in-content {
+    margin: 3rem 0 0 32.5vw;
+  }
+}
+
 .sign-in-icon {
-  font-size: 5rem;
+  font-size: 1rem;
 }
 
 .input-remember {
@@ -212,6 +239,40 @@ body {
 .footer-text {
   margin: 0;
   padding: 0;
+}
+
+.account-div {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  margin: 200px 0 0 0;
+}
+
+.header {
+  color: #fff;
+  position: absolute;
+  margin: 0px 0 0 43.5vw;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    margin: 0px 0 0 43vw;
+  }
+  .account-div {
+    margin: 180px 0 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin: 0px 0 0 40vw;
+  }
+}
+
+@media (max-width: 920px) {
+  .header {
+    margin: 0px 0 0 38.5vw;
+  }
 }
 
 .account {
@@ -257,11 +318,6 @@ body {
   color: #fff;
   font-weight: bold;
   padding: 10px;
-}
-
-.header {
-  color: #fff;
-  margin-bottom: 2rem;
 }
 
 .transaction-button {

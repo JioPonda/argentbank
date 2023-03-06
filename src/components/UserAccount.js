@@ -2,7 +2,7 @@ import React from "react";
 
 export default function UserAccount() {
   return (
-    <>
+    <div className="account-div">
       <section className="account">
         <div className="account-content-wrapper">
           <h3 className="account-title">Argent Bank Checking (x8349)</h3>
@@ -33,6 +33,6 @@ export default function UserAccount() {
           <button className="transaction-button">View transactions</button>
         </div>
       </section>
-    </>
+    </div>
   );
 }
